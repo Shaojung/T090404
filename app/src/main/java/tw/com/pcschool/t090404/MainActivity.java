@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         String result = MyUtils.getRawData(MainActivity.this, R.raw.gowest);
         tv = (TextView)findViewById(R.id.textView);
-        result = result.replace("\n", "\\n");
         tv.setText(result);
         tv.setMovementMethod(ScrollingMovementMethod.getInstance());
     }
